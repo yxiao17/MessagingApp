@@ -28,7 +28,7 @@ class ComposeViewController: UIViewController {
     
 
     @IBAction func addPost(_ sender: Any) {
-        
+        // get auto id this way and will set the value to what text is
         ref?.child("Posts").childByAutoId().setValue(textView.text)
         showAddpostAlert()
     }
